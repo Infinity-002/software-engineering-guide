@@ -1,0 +1,25 @@
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+.vscode/
+.idea/
+
+# Dependencies, build output, and scratch files
+node_modules/
+build/
+dist/
+coverage/
+*.log
+*.tmp
+.DS_Store
+Thumbs.db

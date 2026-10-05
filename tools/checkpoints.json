@@ -1,0 +1,134 @@
+{
+  "01-foundations": {
+    "scenario": "Relay accepts 2,000 concurrent uploads. Memory grows until the process is killed, while CPU is low. A developer proposes making the handler async and doubling the heap.",
+    "questions": ["Explain processes, threads, heap/native buffers, descriptors, and which resources each upload owns.", "Distinguish overlap of I/O from parallel CPU execution. Why does async alone not bound memory?", "Design streaming, concurrency limits, cancellation, and backpressure. State what happens at the limit.", "Choose clocks for request duration and persisted event time, and explain why their representations differ."],
+    "evidence": "Draw a resource-lifetime diagram and run a bounded producer/consumer experiment with measured in-flight work and peak memory.",
+    "rubric": "A strong answer follows bytes and ownership, separates scheduling from capacity, and bounds both buffers and concurrent operations. It treats wall time as an instant and monotonic time as a local duration source. More heap postpones an unbounded-growth failure."
+  },
+  "02-operating-systems-linux": {
+    "scenario": "An API is slow with 15% host CPU on eight cores. It eventually reports too many open files, and restarting helps for twenty minutes.",
+    "questions": ["Choose evidence to distinguish one saturated core, descriptor leaks, memory pressure, disk latency, and network waiting.", "Explain why low host-average CPU and free disk bytes do not rule out resource exhaustion.", "Specify a SIGTERM shutdown sequence and what correctness must survive if SIGKILL follows.", "Describe how you would preserve evidence before a necessary restart."],
+    "evidence": "Inspect a disposable server with process, descriptor, socket, and application timing tools. Record observations separately from hypotheses.",
+    "rubric": "Use per-process/per-core measurements and descriptor trends. Identify the resource owner and cleanup path. Shutdown stops acquisition before bounded drain, and forced termination remains safe through durable state and retries."
+  },
+  "03-networking": {
+    "scenario": "A browser request is slow only on its first visit, while a WebSocket disconnects after long idle periods and an HTTP/2 connection stalls during packet loss.",
+    "questions": ["Trace DNS delegation/caches, connection establishment, TLS verification, HTTP, intermediaries, and backend routing.", "Separate flow control, congestion control, and application backpressure.", "Explain connection reuse, NAT/proxy idle state, and heartbeat/reconnect behavior.", "Compare TCP-level blocking with QUIC stream behavior without claiming HTTP/3 removes congestion."],
+    "evidence": "Capture a browser waterfall for cold and warm requests and annotate which stages were reused or skipped.",
+    "rubric": "The explanation distinguishes packets, streams, requests, and application commits. DNS TTL does not expire established connections. TLS authenticates a channel endpoint; proxies create additional connections and trust boundaries."
+  },
+  "04-frontend": {
+    "scenario": "A task editor shows stale search results, loses an input when sorting, and freezes while typing. Its server-rendered date also mismatches during hydration.",
+    "questions": ["Explain task/microtask scheduling and why completion order differs from request order.", "Assign ownership to URL filters, form drafts, server entities, and local UI state. Design stable query keys.", "Explain React identity, render versus commit, effect cleanup, and the cost of derived-state effects.", "Diagnose the freeze with browser/React traces and repair the hydration data contract.", "Specify keyboard accessibility and behavior tests for failure and concurrent edits."],
+    "evidence": "Build a small page with deliberately delayed out-of-order responses, then demonstrate correct behavior and one measured performance improvement.",
+    "rubric": "Correct answers preserve user intent, use stable identity, validate runtime data, and distinguish network, JavaScript, layout, and paint. They avoid treating memoization as a universal fix or TypeScript as runtime validation."
+  },
+  "05-backend": {
+    "scenario": "Task creation times out, but the task appears later. Listing repeats items during concurrent inserts, and SQL spans are fast while total API latency is high.",
+    "questions": ["Define accepted, committed, responded, and observed states, including retry-safe operation identity.", "Design resource authorization, validation, safe errors, and transaction ownership.", "Replace shifting offsets with a stable cursor and state what it does not guarantee.", "Measure admission/pool wait separately from query execution and external dependency time."],
+    "evidence": "Write an API contract and a concurrent integration test using a real disposable database.",
+    "rubric": "A timeout is not rollback. The service enforces business invariants; the database arbitrates shared constraints. Cursor order includes a unique tie-breaker, and resource budgets apply across replicas."
+  },
+  "06-databases": {
+    "scenario": "A query slows from 20 ms to three seconds at 50 million rows. Two concurrent transactions violate an on-call invariant, and a new task disappears briefly after refresh.",
+    "questions": ["Inspect actual plans, estimates, statistics, buffers, locks, and pool wait before choosing an index.", "Explain B+ tree locality, composite key order, covering access, and write amplification.", "Draw lost-update and write-skew histories; compare atomic updates, locks, version checks, and Serializable retry.", "Explain MVCC cleanup, WAL-before-page ordering, checkpoints, and restore verification.", "Diagnose replica lag and choose a read-your-writes policy before proposing sharding."],
+    "evidence": "Run two SQL sessions to reproduce a conflict, capture an EXPLAIN plan, and restore a small backup into an isolated database.",
+    "rubric": "The answer separates query cost, concurrency correctness, durability, and replica visibility. It states PostgreSQL-specific isolation behavior accurately and treats indexes/replicas as workload trade-offs."
+  },
+  "07-caching": {
+    "scenario": "A 99% hit-rate cache is lost during deployment. PostgreSQL collapses, and some recovered keys contain stale values despite a recent invalidation.",
+    "questions": ["Estimate origin amplification and identify where admission must be bounded.", "Draw the stale-fill race around a database commit and cache deletion.", "Compare coalescing, TTL jitter, negative caching, and safe stale serving.", "Define cache keys and freshness for task summaries versus workspace permissions."],
+    "evidence": "Inject a cold-cache event and show bounded origin work plus a version/freshness policy for refills.",
+    "rubric": "Hit rate alone is insufficient. The cache has an authority, representation identity, stale policy, outage policy, and repair path. A short TTL does not prove a bound if stale data is inserted late."
+  },
+  "08-security": {
+    "scenario": "A valid JWT lets a user edit another workspace, a malicious website triggers a cookie-authenticated mutation, and a URL-preview endpoint reaches an internal address.",
+    "questions": ["Separate decoding, cryptographic verification, contextual claim validation, and resource authorization.", "Draw trust boundaries and identify who supplied every tenant/resource/role value.", "Explain CORS versus CSRF, HttpOnly limitations, XSS defenses, and safe cookie scope.", "Threat-model SSRF across redirects, DNS changes, response size, and network egress.", "Specify password hashing, secret rotation, and least-privilege service identities."],
+    "evidence": "Write negative integration tests for cross-tenant access, invalid token context, CSRF protection, and constrained URL fetching.",
+    "rubric": "Authentication is not authorization, CORS is not a mutation guard, and signatures do not establish current permissions. The answer avoids homemade cryptography and treats frontend input as untrusted."
+  },
+  "09-messaging-streaming": {
+    "scenario": "A worker commits an effect and crashes before acknowledgement. Another consumer falls behind retention, and a poison event is retried continuously.",
+    "questions": ["Draw at-most-once and at-least-once crash windows and define any exactly-once claim's scope.", "Explain publisher acceptance versus consumer acknowledgement and durable business completion.", "Design retry classification, jitter, DLQ ownership, redrive, and backpressure.", "Explain Kafka partition order, group assignments, offsets, rebalancing, retention, and schema evolution."],
+    "evidence": "Run a controlled crash after effect commit and prove duplicate delivery cannot repeat the protected local effect.",
+    "rubric": "Progress is committed only after the intended boundary. Queue age and retention matter, and global order is not inferred from one topic. External provider effects require their own identity/reconciliation support."
+  },
+  "10-distributed-systems": {
+    "scenario": "A network partition isolates a leader. A new leader is elected, while the old one resumes after a long pause and still reaches storage.",
+    "questions": ["Explain partial failure and why a timeout does not prove death.", "State CAP using a concrete partitioned read/write history and distinguish formal availability from an SLO.", "Show what R + W > N proves and which protocol assumptions remain.", "Walk through lease expiry, renewal, ownership checks, fencing, and the maximum-seen-token limitation.", "Compare wall, monotonic, Lamport, and vector clocks; explain how consensus preserves committed history."],
+    "evidence": "Run the lease/fencing model and draw both a safe rejected stale write and an old write arriving before the newer fence is installed.",
+    "rubric": "Authority is enforced at the accepting resource, not by a process's belief. Safety and liveness are separate. Clock, durability, membership, and failure assumptions are explicit."
+  },
+  "11-system-data-structures": {
+    "scenario": "A write-heavy store has many sorted files, expensive negative lookups, growing compaction debt, and replicas that need efficient comparison.",
+    "questions": ["Explain Bloom insertion/query, false-positive sizing, no-false-negative assumptions, and deletion limits.", "Compare B+ tree and LSM read/write/space behavior using pages and compaction.", "Explain consistent hashing movement, virtual nodes, hot keys, and why placement is not migration.", "Show skip-list search and Merkle replica comparison, including what each hierarchy skips.", "Compare exact sets, HLL cardinality, Bloom membership, and inverted-index search."],
+    "evidence": "Run the Bloom lab, calculate a target size, and draw a compaction/tombstone history plus a Merkle proof.",
+    "rubric": "The structure is chosen for a specific query and cost model. Approximation assumptions and error scope are stated. Hash agreement does not decide authority, and balanced key count does not imply balanced traffic."
+  },
+  "12-fullstack": {
+    "scenario": "A user saves a task, uploads a file, and receives a live notification, but then loses the network before seeing confirmations.",
+    "questions": ["Trace click through runtime, network, auth, SQL, response, query cache, React commit, and pixels.", "Diagnose login success with missing subsequent cookies using browser policy evidence.", "Define mutation unknown outcomes and reconnect recovery through durable cursors.", "Model upload intent, object version, quarantine, verification, publication, and orphan cleanup."],
+    "evidence": "Capture one complete request trace and one interrupted upload or live-message recovery history.",
+    "rubric": "The explanation joins frontend and backend authority rather than treating fetch as a magical boundary. Live delivery is separate from durable history, and an upload capability does not certify content safety."
+  },
+  "13-reliability": {
+    "scenario": "A dependency slows tenfold. Retries synchronize, pools fill, liveness checks restart healthy processes, and a rate limiter becomes unavailable.",
+    "questions": ["Allocate an end-to-end deadline and bound attempts, concurrency, and queueing.", "Compare backoff/jitter, circuit breakers, bulkheads, shedding, and degradation by failure mechanism.", "Choose rate-limiter algorithms and atomic distributed state, including fail-open/fail-closed behavior.", "Separate readiness/liveness/startup and define safe drain.", "State RPO/RTO and prove recovery with a restore drill."],
+    "evidence": "Inject latency and show bounded resource growth, useful rejection, and measured recovery.",
+    "rubric": "Retries consume capacity and do not prove failure. Rate, concurrency, and backlog are different limits. Recovery includes data correctness and configuration, not merely a green process."
+  },
+  "14-observability": {
+    "scenario": "Users see five-second requests, but the average server latency and CPU dashboards appear healthy. A small region has severe errors.",
+    "questions": ["Use logs, metrics, traces, and browser timing to locate the critical path and missing intervals.", "Explain counters, gauges, histograms, percentiles, and why per-replica p99 values cannot be averaged.", "Design RED/USE dashboards with bounded labels and protected sensitive data.", "Define SLI/SLO/SLA, error-budget burn, and actionable multi-window alerts."],
+    "evidence": "Produce a slow-request timeline and an alert/runbook tied to a user outcome rather than one machine threshold.",
+    "rubric": "Population, sampling, and measurement boundary are explicit. Waiting is instrumented separately from execution. The alert identifies impact, owner, action, and verification."
+  },
+  "15-containers": {
+    "scenario": "The API container cannot reach localhost:5432, loses uploaded files on replacement, and ignores graceful shutdown until forcibly killed.",
+    "questions": ["Explain namespaces, cgroups, image layers, writable state, and volumes.", "Trace container network/service names versus host-published ports.", "Review Dockerfile caching, build secrets, non-root execution, and signal delivery.", "Distinguish process startup, readiness, persistent storage, and backups in Compose."],
+    "evidence": "Replace an API container without losing authoritative data and demonstrate a bounded SIGTERM drain.",
+    "rubric": "A container is a packaged isolated process, not an independent-kernel VM by default. Images are immutable inputs, and durable state has an explicitly managed lifecycle."
+  },
+  "16-cloud": {
+    "scenario": "Relay expands to two zones. API autoscaling increases database failures, and attachment egress costs exceed compute costs.",
+    "questions": ["Choose compute, object/block storage, managed database, queue, and cache primitives from workload needs.", "Draw VPC/subnet/routes/firewalls, public entry, private data paths, and IAM identities.", "Explain zone/region failure domains and shared correlated risks.", "Estimate storage, egress, replication, telemetry, and fleet-wide connections before changing scale policy."],
+    "evidence": "Produce a vendor-neutral architecture plus representative AWS mapping, a cost worksheet in Markdown, and a regional recovery outline.",
+    "rubric": "Managed services retain limits and contracts. Network privacy is not authorization. Autoscaling respects downstream capacity, and multi-zone deployment does not protect against every shared failure."
+  },
+  "17-kubernetes": {
+    "scenario": "A Deployment requests five replicas. Two pods remain Pending, one crash-loops, and two Running pods have no Service traffic.",
+    "questions": ["Trace reconciliation through API, scheduler, controllers, kubelet, and workload objects.", "Distinguish Deployment, ReplicaSet, Pod, Service, and Ingress/controller responsibilities.", "Investigate requests/limits, events, probes, selectors, ports, and network policy.", "Design rolling update, graceful drain, autoscaling, secret/config updates, and persistent-volume behavior."],
+    "evidence": "Diagnose each symptom from object status/events and application evidence in a disposable cluster, or write the exact evidence plan if no cluster is available.",
+    "rubric": "Lifecycle state is not readiness, and desired replicas do not create missing capacity. Secrets are not encrypted merely by base64 encoding. Kubernetes coordinates workloads but does not implement application data correctness."
+  },
+  "18-ci-cd": {
+    "scenario": "A release renames a database field while old replicas and delayed consumers still run. Rolling back the image does not restore service.",
+    "questions": ["Design expand/contract migration, bounded backfill, mixed-version reads/writes, and removal criteria.", "Explain immutable artifact promotion, provenance, configuration, and CI credential boundaries.", "Compare rolling, blue-green, and canary exposure using user-outcome verification.", "Define feature-flag defaults/lifecycle and a rollback or roll-forward plan that accounts for data changes."],
+    "evidence": "Write a release plan with preconditions, stop criteria, recovery steps, and verification for old/new combinations.",
+    "rubric": "Code rollback is not data rollback. Queues and caches extend compatibility windows. A successful deployment controller status is weaker than successful user journeys."
+  },
+  "19-system-design": {
+    "scenario": "Design a private file-sharing service, then add offline edits, a tenfold traffic peak, and a regional outage requirement one at a time.",
+    "questions": ["Apply all fourteen method steps, including APIs, authoritative data, capacity units, and skew.", "Trace one write/read and crash between each durable boundary.", "Defend consistency, authorization, deletion, observability, and recovery decisions.", "Name a component you intentionally omit and the measured trigger for adding it."],
+    "evidence": "Produce a timed design document and revise only the assumptions affected by each new requirement.",
+    "rubric": "Components follow requirements rather than a memorized diagram. The answer distinguishes metadata from blobs, authority from projections, and local atomicity from external effects. Estimates influence choices."
+  },
+  "20-production-patterns": {
+    "scenario": "A paid workspace upgrade changes local state, charges a provider, updates a projection, and sends notifications. Requests and events may duplicate.",
+    "questions": ["Place idempotency, outbox, inbox, and provider reconciliation at their actual atomic boundaries.", "Compare saga compensation with two-phase commit and explain which participants support each.", "Decide whether CQRS/event sourcing helps and define projection/event evolution.", "Review tenant isolation, soft deletion, audit, optimistic/pessimistic concurrency, and flags through the workflow."],
+    "evidence": "Draw the state machine and failure table, including an unknown payment outcome and a failed compensation.",
+    "rubric": "Every pattern has a specific problem, cost, and reason not to use it. No local lock or transaction is claimed to cover unsupported external effects. Identity, retention, and repair are explicit."
+  },
+  "21-case-studies": {
+    "scenario": "Relay grows from one service to multiple replicas, a cache, workers, and search. A cache deployment triggers database overload while a worker duplicates an external effect.",
+    "questions": ["Explain the measured trigger and new failure mode for each architectural addition.", "Separate mitigation, diagnosis, durable repair, and post-recovery reconciliation.", "Choose evidence that distinguishes pool exhaustion, query slowness, and retry amplification.", "Explain which stage a small team should stop at and why more components may reduce reliability."],
+    "evidence": "Write a decision ledger and a five-minute incident narrative with timeline, hypotheses, evidence, and regression experiment.",
+    "rubric": "The account follows causal mechanisms and durable state, not blame or technology names. It includes the user-visible verification that proves recovery and the remaining limits of the design."
+  },
+  "22-interview-preparation": {
+    "scenario": "You have one hour to design a scheduler, diagnose a slow request, and explain an unfamiliar frontend race to a reviewer who challenges your assumptions.",
+    "questions": ["Answer one question from each domain with mechanism, example, failure, trade-off, and validation.", "Complete a timed mock without reading the rubric, then identify specific gaps.", "Explain one concept at two depths: two minutes for a teammate and ten minutes with an adversarial history.", "Revise an answer when new evidence contradicts your first hypothesis."],
+    "evidence": "Record four mock scores and one concrete correction per weak category; repeat after doing the relevant chapter exercises.",
+    "rubric": "Strong communication names assumptions and uncertainty, uses concrete histories, and changes conclusions when evidence changes. Memorized definitions without failure reasoning do not pass."
+  }
+}

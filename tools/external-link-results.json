@@ -1,0 +1,995 @@
+{
+  "checked_at_utc": "2026-10-04T19:03:15.488449+00:00",
+  "results": [
+    {
+      "url": "https://15445.courses.cs.cmu.edu/",
+      "status": 200,
+      "resolved": "https://15445.courses.cs.cmu.edu/fall2026/"
+    },
+    {
+      "url": "https://algo.inria.fr/flajolet/Publications/FlFuGaMe07.pdf",
+      "status": 200,
+      "resolved": "https://algo.inria.fr/flajolet/Publications/FlFuGaMe07.pdf"
+    },
+    {
+      "url": "https://automerge.org/docs/",
+      "status": 200,
+      "resolved": "https://automerge.org/docs/"
+    },
+    {
+      "url": "https://aws.amazon.com/builders-library/caching-challenges-and-strategies/",
+      "status": 200,
+      "resolved": "https://aws.amazon.com/builders-library/caching-challenges-and-strategies/"
+    },
+    {
+      "url": "https://aws.amazon.com/builders-library/making-retries-safe-with-idempotent-APIs/",
+      "status": 200,
+      "resolved": "https://aws.amazon.com/builders-library/making-retries-safe-with-idempotent-APIs/"
+    },
+    {
+      "url": "https://aws.amazon.com/builders-library/timeouts-retries-and-backoff-with-jitter/",
+      "status": 200,
+      "resolved": "https://builder.aws.com/content/3EumjoZascWd1oZiEgL8ORlv3qE/timeouts-retries-and-backoff-with-jitter"
+    },
+    {
+      "url": "https://aws.amazon.com/compliance/shared-responsibility-model/",
+      "status": 200,
+      "resolved": "https://aws.amazon.com/compliance/shared-responsibility-model/"
+    },
+    {
+      "url": "https://cassandra.apache.org/doc/latest/cassandra/architecture/dynamo.html",
+      "status": 200,
+      "resolved": "https://cassandra.apache.org/doc/latest/cassandra/architecture/dynamo.html"
+    },
+    {
+      "url": "https://cheatsheetseries.owasp.org/",
+      "status": 200,
+      "resolved": "https://cheatsheetseries.owasp.org/"
+    },
+    {
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html",
+      "status": 200,
+      "resolved": "https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html"
+    },
+    {
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html",
+      "status": 200,
+      "resolved": "https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html"
+    },
+    {
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html",
+      "status": 200,
+      "resolved": "https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html"
+    },
+    {
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/File_Upload_Cheat_Sheet.html",
+      "status": 200,
+      "resolved": "https://cheatsheetseries.owasp.org/cheatsheets/File_Upload_Cheat_Sheet.html"
+    },
+    {
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html",
+      "status": 200,
+      "resolved": "https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html"
+    },
+    {
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html",
+      "status": 200,
+      "resolved": "https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html"
+    },
+    {
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html",
+      "status": 200,
+      "resolved": "https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html"
+    },
+    {
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet.html",
+      "status": 200,
+      "resolved": "https://cheatsheetseries.owasp.org/cheatsheets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet.html"
+    },
+    {
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html",
+      "status": 200,
+      "resolved": "https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html"
+    },
+    {
+      "url": "https://cs.brown.edu/~mph/HerlihyW90/p463-herlihy.pdf",
+      "status": 200,
+      "resolved": "https://cs.brown.edu/people/mph/HerlihyW90/p463-herlihy.pdf"
+    },
+    {
+      "url": "https://dataintensive.net/",
+      "status": 200,
+      "resolved": "https://dataintensive.net/"
+    },
+    {
+      "url": "https://debezium.io/documentation/reference/stable/transformations/outbox-event-router.html",
+      "status": 200,
+      "resolved": "https://debezium.io/documentation/reference/stable/transformations/outbox-event-router.html"
+    },
+    {
+      "url": "https://developer.chrome.com/docs/devtools/performance",
+      "status": 200,
+      "resolved": "https://developer.chrome.com/docs/devtools/performance"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development",
+      "status": 200,
+      "resolved": "https://developer.mozilla.org/en-US/docs/Learn_web_development"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout",
+      "status": 200,
+      "resolved": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API",
+      "status": 200,
+      "resolved": "https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/Request/credentials",
+      "status": 200,
+      "resolved": "https://developer.mozilla.org/en-US/docs/Web/API/Request/credentials"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events",
+      "status": 200,
+      "resolved": "https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel/preload",
+      "status": 200,
+      "resolved": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/rel/preload"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies",
+      "status": 200,
+      "resolved": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Cookies"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Closures",
+      "status": 200,
+      "resolved": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Closures"
+    },
+    {
+      "url": "https://developers.eventstore.com/",
+      "status": 200,
+      "resolved": "https://docs.kurrent.io/"
+    },
+    {
+      "url": "https://dl.acm.org/doi/10.1145/362686.362692",
+      "status": 403,
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-visibility-timeout.html",
+      "status": 200,
+      "resolved": "https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-visibility-timeout.html"
+    },
+    {
+      "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/PresignedUrlUploadObject.html",
+      "status": 200,
+      "resolved": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/PresignedUrlUploadObject.html"
+    },
+    {
+      "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html",
+      "status": 200,
+      "resolved": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html"
+    },
+    {
+      "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/mpuoverview.html",
+      "status": 200,
+      "resolved": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/mpuoverview.html"
+    },
+    {
+      "url": "https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html",
+      "status": 200,
+      "resolved": "https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html"
+    },
+    {
+      "url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html",
+      "status": 200,
+      "resolved": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html"
+    },
+    {
+      "url": "https://docs.confluent.io/platform/current/schema-registry/fundamentals/schema-evolution.html",
+      "status": 200,
+      "resolved": "https://docs.confluent.io/platform/current/schema-registry/fundamentals/schema-evolution.html"
+    },
+    {
+      "url": "https://docs.docker.com/compose/",
+      "status": 200,
+      "resolved": "https://docs.docker.com/compose/"
+    },
+    {
+      "url": "https://docs.docker.com/get-started/docker-concepts/the-basics/what-is-a-container/",
+      "status": 200,
+      "resolved": "https://docs.docker.com/get-started/docker-concepts/the-basics/what-is-a-container/"
+    },
+    {
+      "url": "https://docs.docker.com/reference/dockerfile/",
+      "status": 200,
+      "resolved": "https://docs.docker.com/reference/dockerfile/"
+    },
+    {
+      "url": "https://docs.pact.io/",
+      "status": 200,
+      "resolved": "https://docs.pact.io/"
+    },
+    {
+      "url": "https://docs.stripe.com/api/idempotent_requests",
+      "status": 200,
+      "resolved": "https://docs.stripe.com/api/idempotent_requests"
+    },
+    {
+      "url": "https://etcd.io/docs/v3.5/learning/api/#lease-api",
+      "status": 200,
+      "resolved": "https://etcd.io/docs/v3.5/learning/api/#lease-api"
+    },
+    {
+      "url": "https://fetch.spec.whatwg.org/",
+      "status": 200,
+      "resolved": "https://fetch.spec.whatwg.org/"
+    },
+    {
+      "url": "https://git-scm.com/book/en/v2/Git-Internals-Git-Objects",
+      "status": 200,
+      "resolved": "https://git-scm.com/book/en/v2/Git-Internals-Git-Objects"
+    },
+    {
+      "url": "https://github.com/facebook/rocksdb/wiki/Compaction",
+      "status": 200,
+      "resolved": "https://github.com/facebook/rocksdb/wiki/Compaction"
+    },
+    {
+      "url": "https://github.com/facebook/rocksdb/wiki/MemTable",
+      "status": 200,
+      "resolved": "https://github.com/facebook/rocksdb/wiki/MemTable"
+    },
+    {
+      "url": "https://github.com/facebook/rocksdb/wiki/RocksDB-Bloom-Filter",
+      "status": 200,
+      "resolved": "https://github.com/facebook/rocksdb/wiki/RocksDB-Bloom-Filter"
+    },
+    {
+      "url": "https://github.com/facebook/rocksdb/wiki/RocksDB-Overview",
+      "status": 200,
+      "resolved": "https://github.com/facebook/rocksdb/wiki/RocksDB-Overview"
+    },
+    {
+      "url": "https://github.com/google/leveldb/blob/main/db/skiplist.h",
+      "status": 200,
+      "resolved": "https://github.com/google/leveldb/blob/main/db/skiplist.h"
+    },
+    {
+      "url": "https://github.com/google/leveldb/blob/main/doc/impl.md",
+      "status": 200,
+      "resolved": "https://github.com/google/leveldb/blob/main/doc/impl.md"
+    },
+    {
+      "url": "https://grafana.com/docs/k6/latest/using-k6/",
+      "status": 200,
+      "resolved": "https://grafana.com/docs/k6/latest/using-k6/"
+    },
+    {
+      "url": "https://groups.csail.mit.edu/tds/papers/Lynch/jacm85.pdf",
+      "status": 200,
+      "resolved": "https://groups.csail.mit.edu/tds/papers/Lynch/jacm85.pdf"
+    },
+    {
+      "url": "https://grpc.io/docs/what-is-grpc/core-concepts/",
+      "status": 200,
+      "resolved": "https://grpc.io/docs/what-is-grpc/core-concepts/"
+    },
+    {
+      "url": "https://html.spec.whatwg.org/",
+      "status": 200,
+      "resolved": "https://html.spec.whatwg.org/"
+    },
+    {
+      "url": "https://html.spec.whatwg.org/multipage/webappapis.html#event-loops",
+      "status": 200,
+      "resolved": "https://html.spec.whatwg.org/multipage/webappapis.html#event-loops"
+    },
+    {
+      "url": "https://jepsen.io/consistency",
+      "status": 200,
+      "resolved": "https://jepsen.io/consistency"
+    },
+    {
+      "url": "https://kafka.apache.org/41/configuration/",
+      "status": 200,
+      "resolved": "https://kafka.apache.org/41/configuration/"
+    },
+    {
+      "url": "https://kafka.apache.org/41/design/design/",
+      "status": 200,
+      "resolved": "https://kafka.apache.org/41/design/design/"
+    },
+    {
+      "url": "https://kafka.apache.org/intro",
+      "status": 200,
+      "resolved": "https://kafka.apache.org/intro/"
+    },
+    {
+      "url": "https://kubernetes.io/docs/concepts/architecture/",
+      "status": 200,
+      "resolved": "https://kubernetes.io/docs/concepts/architecture/"
+    },
+    {
+      "url": "https://kubernetes.io/docs/concepts/configuration/liveness-readiness-startup-probes/",
+      "status": 200,
+      "resolved": "https://kubernetes.io/docs/concepts/workloads/pods/probes/"
+    },
+    {
+      "url": "https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/",
+      "status": 200,
+      "resolved": "https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/"
+    },
+    {
+      "url": "https://kubernetes.io/docs/concepts/services-networking/service/",
+      "status": 200,
+      "resolved": "https://kubernetes.io/docs/concepts/services-networking/service/"
+    },
+    {
+      "url": "https://kubernetes.io/docs/concepts/workloads/",
+      "status": 200,
+      "resolved": "https://kubernetes.io/docs/concepts/workloads/"
+    },
+    {
+      "url": "https://lamport.azurewebsites.net/pubs/paxos-simple.pdf",
+      "status": 200,
+      "resolved": "https://lamport.azurewebsites.net/pubs/paxos-simple.pdf"
+    },
+    {
+      "url": "https://lamport.azurewebsites.net/pubs/time-clocks.pdf",
+      "status": 200,
+      "resolved": "https://lamport.azurewebsites.net/pubs/time-clocks.pdf"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/backends-for-frontends",
+      "status": 200,
+      "resolved": "https://learn.microsoft.com/en-us/azure/architecture/patterns/backends-for-frontends"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/cqrs",
+      "status": 200,
+      "resolved": "https://learn.microsoft.com/en-us/azure/architecture/patterns/cqrs"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/event-sourcing",
+      "status": 200,
+      "resolved": "https://learn.microsoft.com/en-us/azure/architecture/patterns/event-sourcing"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/saga",
+      "status": 200,
+      "resolved": "https://learn.microsoft.com/en-us/azure/architecture/patterns/saga"
+    },
+    {
+      "url": "https://lucene.apache.org/core/",
+      "status": 200,
+      "resolved": "https://lucene.apache.org/core/"
+    },
+    {
+      "url": "https://man7.org/linux/man-pages/",
+      "status": 200,
+      "resolved": "https://man7.org/linux/man-pages/"
+    },
+    {
+      "url": "https://man7.org/linux/man-pages/man2/open.2.html",
+      "status": 200,
+      "resolved": "https://man7.org/linux/man-pages/man2/open.2.html"
+    },
+    {
+      "url": "https://man7.org/linux/man-pages/man2/socket.2.html",
+      "status": 200,
+      "resolved": "https://man7.org/linux/man-pages/man2/socket.2.html"
+    },
+    {
+      "url": "https://man7.org/linux/man-pages/man5/proc.5.html",
+      "status": 200,
+      "resolved": "https://man7.org/linux/man-pages/man5/proc.5.html"
+    },
+    {
+      "url": "https://man7.org/linux/man-pages/man7/signal.7.html",
+      "status": 200,
+      "resolved": "https://man7.org/linux/man-pages/man7/signal.7.html"
+    },
+    {
+      "url": "https://martin.kleppmann.com/2016/02/08/how-to-do-distributed-locking.html",
+      "status": 200,
+      "resolved": "https://martin.kleppmann.com/2016/02/08/how-to-do-distributed-locking.html"
+    },
+    {
+      "url": "https://nextjs.org/docs/app/getting-started/server-and-client-components",
+      "status": 200,
+      "resolved": "https://nextjs.org/docs/app/getting-started/server-and-client-components"
+    },
+    {
+      "url": "https://nextjs.org/docs/app/guides/caching",
+      "status": 200,
+      "resolved": "https://nextjs.org/docs/app/guides/caching-without-cache-components"
+    },
+    {
+      "url": "https://node-postgres.com/",
+      "status": 200,
+      "resolved": "https://node-postgres.com/"
+    },
+    {
+      "url": "https://node-postgres.com/features/pooling",
+      "status": 200,
+      "resolved": "https://node-postgres.com/features/pooling"
+    },
+    {
+      "url": "https://node-postgres.com/features/transactions",
+      "status": 200,
+      "resolved": "https://node-postgres.com/features/transactions"
+    },
+    {
+      "url": "https://nodejs.org/api/http.html",
+      "status": 200,
+      "resolved": "https://nodejs.org/api/http.html"
+    },
+    {
+      "url": "https://nodejs.org/en/learn/asynchronous-work/dont-block-the-event-loop",
+      "status": 200,
+      "resolved": "https://nodejs.org/learn/asynchronous-work/dont-block-the-event-loop"
+    },
+    {
+      "url": "https://nodejs.org/en/learn/modules/backpressuring-in-streams",
+      "status": 200,
+      "resolved": "https://nodejs.org/learn/modules/backpressuring-in-streams"
+    },
+    {
+      "url": "https://openfeature.dev/docs/reference/intro/",
+      "status": 200,
+      "resolved": "https://openfeature.dev/docs/reference/intro/"
+    },
+    {
+      "url": "https://openid.net/specs/openid-connect-core-1_0.html",
+      "status": 200,
+      "resolved": "https://openid.net/specs/openid-connect-core-1_0.html"
+    },
+    {
+      "url": "https://opentelemetry.io/docs/concepts/",
+      "status": 200,
+      "resolved": "https://opentelemetry.io/docs/concepts/"
+    },
+    {
+      "url": "https://opentelemetry.io/docs/concepts/signals/traces/",
+      "status": 200,
+      "resolved": "https://opentelemetry.io/docs/concepts/signals/traces/"
+    },
+    {
+      "url": "https://pages.cs.wisc.edu/~cao/papers/summary-cache/node8.html",
+      "status": 200,
+      "resolved": "https://pages.cs.wisc.edu/~cao/papers/summary-cache/node8.html"
+    },
+    {
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/",
+      "status": 200,
+      "resolved": "https://pages.cs.wisc.edu/~remzi/OSTEP/"
+    },
+    {
+      "url": "https://playwright.dev/docs/best-practices",
+      "status": 200,
+      "resolved": "https://playwright.dev/docs/best-practices"
+    },
+    {
+      "url": "https://prometheus.io/docs/concepts/metric_types/",
+      "status": 200,
+      "resolved": "https://prometheus.io/docs/concepts/metric_types/"
+    },
+    {
+      "url": "https://raft.github.io/",
+      "status": 200,
+      "resolved": "https://raft.github.io/"
+    },
+    {
+      "url": "https://raft.github.io/raft.pdf",
+      "status": 200,
+      "resolved": "https://raft.github.io/raft.pdf"
+    },
+    {
+      "url": "https://react.dev/learn",
+      "status": 200,
+      "resolved": "https://react.dev/learn"
+    },
+    {
+      "url": "https://react.dev/learn/preserving-and-resetting-state",
+      "status": 200,
+      "resolved": "https://react.dev/learn/preserving-and-resetting-state"
+    },
+    {
+      "url": "https://react.dev/learn/render-and-commit",
+      "status": 200,
+      "resolved": "https://react.dev/learn/render-and-commit"
+    },
+    {
+      "url": "https://react.dev/learn/state-as-a-snapshot",
+      "status": 200,
+      "resolved": "https://react.dev/learn/state-as-a-snapshot"
+    },
+    {
+      "url": "https://react.dev/learn/synchronizing-with-effects",
+      "status": 200,
+      "resolved": "https://react.dev/learn/synchronizing-with-effects"
+    },
+    {
+      "url": "https://react.dev/reference/react-dom/client/hydrateRoot",
+      "status": 200,
+      "resolved": "https://react.dev/reference/react-dom/client/hydrateRoot"
+    },
+    {
+      "url": "https://react.dev/reference/react/Profiler",
+      "status": 200,
+      "resolved": "https://react.dev/reference/react/Profiler"
+    },
+    {
+      "url": "https://react.dev/reference/react/act",
+      "status": 200,
+      "resolved": "https://react.dev/reference/react/act"
+    },
+    {
+      "url": "https://react.dev/reference/rsc/server-components",
+      "status": 200,
+      "resolved": "https://react.dev/reference/rsc/server-components"
+    },
+    {
+      "url": "https://redis.io/docs/latest/develop/clients/patterns/distributed-locks/",
+      "status": 200,
+      "resolved": "https://redis.io/docs/latest/develop/clients/patterns/distributed-locks/"
+    },
+    {
+      "url": "https://redis.io/docs/latest/develop/data-types/probabilistic/hyperloglogs/",
+      "status": 200,
+      "resolved": "https://redis.io/docs/latest/develop/data-types/probabilistic/hyperloglogs/"
+    },
+    {
+      "url": "https://redis.io/docs/latest/develop/reference/eviction/",
+      "status": 200,
+      "resolved": "https://redis.io/docs/latest/develop/reference/eviction/"
+    },
+    {
+      "url": "https://redis.io/docs/latest/operate/oss_and_stack/management/optimization/latency/",
+      "status": 200,
+      "resolved": "https://redis.io/docs/latest/operate/oss_and_stack/management/optimization/latency/"
+    },
+    {
+      "url": "https://redis.io/learn/develop/java/spring/rate-limiting/fixed-window",
+      "status": 200,
+      "resolved": "https://redis.io/tutorials/rate-limiting-in-java-spring-with-redis/"
+    },
+    {
+      "url": "https://redux.js.org/tutorials/essentials/part-1-overview-concepts",
+      "status": 200,
+      "resolved": "https://redux.js.org/tutorials/essentials/part-1-overview-concepts"
+    },
+    {
+      "url": "https://research.google/pubs/hyperloglog-in-practice-algorithmic-engineering-of-a-state-of-the-art-cardinality-estimation-algorithm/",
+      "status": 200,
+      "resolved": "https://research.google/pubs/hyperloglog-in-practice-algorithmic-engineering-of-a-state-of-the-art-cardinality-estimation-algorithm/"
+    },
+    {
+      "url": "https://research.google/pubs/spanner-googles-globally-distributed-database/",
+      "status": 200,
+      "resolved": "https://research.google/pubs/spanner-googles-globally-distributed-database/"
+    },
+    {
+      "url": "https://research.google/pubs/the-chubby-lock-service-for-loosely-coupled-distributed-systems/",
+      "status": 200,
+      "resolved": "https://research.google/pubs/the-chubby-lock-service-for-loosely-coupled-distributed-systems/"
+    },
+    {
+      "url": "https://slsa.dev/",
+      "status": 200,
+      "resolved": "https://slsa.dev/"
+    },
+    {
+      "url": "https://spec.graphql.org/",
+      "status": 200,
+      "resolved": "https://spec.graphql.org/"
+    },
+    {
+      "url": "https://spec.openapis.org/oas/latest.html",
+      "status": 200,
+      "resolved": "https://spec.openapis.org/oas/latest.html"
+    },
+    {
+      "url": "https://sre.google/books/",
+      "status": 200,
+      "resolved": "https://sre.google/books/"
+    },
+    {
+      "url": "https://sre.google/sre-book/data-integrity/",
+      "status": 200,
+      "resolved": "https://sre.google/sre-book/data-integrity/"
+    },
+    {
+      "url": "https://sre.google/sre-book/effective-troubleshooting/",
+      "status": 200,
+      "resolved": "https://sre.google/sre-book/effective-troubleshooting/"
+    },
+    {
+      "url": "https://sre.google/sre-book/handling-overload/",
+      "status": 200,
+      "resolved": "https://sre.google/sre-book/handling-overload/"
+    },
+    {
+      "url": "https://sre.google/sre-book/managing-incidents/",
+      "status": 200,
+      "resolved": "https://sre.google/sre-book/managing-incidents/"
+    },
+    {
+      "url": "https://sre.google/sre-book/release-engineering/",
+      "status": 200,
+      "resolved": "https://sre.google/sre-book/release-engineering/"
+    },
+    {
+      "url": "https://sre.google/sre-book/service-level-objectives/",
+      "status": 200,
+      "resolved": "https://sre.google/sre-book/service-level-objectives/"
+    },
+    {
+      "url": "https://sre.google/sre-book/simplicity/",
+      "status": 200,
+      "resolved": "https://sre.google/sre-book/simplicity/"
+    },
+    {
+      "url": "https://sre.google/sre-book/table-of-contents/",
+      "status": 200,
+      "resolved": "https://sre.google/sre-book/table-of-contents/"
+    },
+    {
+      "url": "https://sre.google/workbook/alerting-on-slos/",
+      "status": 200,
+      "resolved": "https://sre.google/workbook/alerting-on-slos/"
+    },
+    {
+      "url": "https://sre.google/workbook/table-of-contents/",
+      "status": 200,
+      "resolved": "https://sre.google/workbook/table-of-contents/"
+    },
+    {
+      "url": "https://tanstack.com/query/latest/docs/framework/react/overview",
+      "status": 200,
+      "resolved": "https://tanstack.com/query/latest/docs/framework/react/overview"
+    },
+    {
+      "url": "https://tc39.es/ecma262/",
+      "status": 200,
+      "resolved": "https://tc39.es/ecma262/"
+    },
+    {
+      "url": "https://testing-library.com/docs/guiding-principles/",
+      "status": 200,
+      "resolved": "https://testing-library.com/docs/guiding-principles/"
+    },
+    {
+      "url": "https://users.ece.cmu.edu/~adrian/731-sp04/readings/GL-cap.pdf",
+      "status": 200,
+      "resolved": "https://users.ece.cmu.edu/~adrian/731-sp04/readings/GL-cap.pdf"
+    },
+    {
+      "url": "https://w3c.github.io/ServiceWorker/",
+      "status": 200,
+      "resolved": "https://w3c.github.io/ServiceWorker/"
+    },
+    {
+      "url": "https://web.dev/articles/rendering-performance",
+      "status": 200,
+      "resolved": "https://web.dev/articles/rendering-performance"
+    },
+    {
+      "url": "https://web.dev/articles/vitals",
+      "status": 200,
+      "resolved": "https://web.dev/articles/vitals"
+    },
+    {
+      "url": "https://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf",
+      "status": 200,
+      "resolved": "https://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf"
+    },
+    {
+      "url": "https://www.brendangregg.com/usemethod.html",
+      "status": 200,
+      "resolved": "https://www.brendangregg.com/usemethod.html"
+    },
+    {
+      "url": "https://www.cs.umd.edu/~pugh/skipLists/skipLists.pdf",
+      "status": null,
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:992)>"
+    },
+    {
+      "url": "https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis.html",
+      "status": 200,
+      "resolved": "https://www.elastic.co/docs/manage-data/data-store/text-analysis"
+    },
+    {
+      "url": "https://www.elastic.co/guide/en/elasticsearch/reference/current/near-real-time.html",
+      "status": 200,
+      "resolved": "https://www.elastic.co/docs/manage-data/data-store/near-real-time-search"
+    },
+    {
+      "url": "https://www.elastic.co/guide/en/elasticsearch/reference/current/scalability.html",
+      "status": 200,
+      "resolved": "https://www.elastic.co/docs/deploy-manage/production-guidance/elasticsearch-in-production-environments"
+    },
+    {
+      "url": "https://www.envoyproxy.io/docs/envoy/latest/intro/arch_overview/arch_overview",
+      "status": 200,
+      "resolved": "https://www.envoyproxy.io/docs/envoy/latest/intro/arch_overview/arch_overview"
+    },
+    {
+      "url": "https://www.envoyproxy.io/docs/envoy/latest/intro/arch_overview/other_features/global_rate_limiting",
+      "status": 200,
+      "resolved": "https://www.envoyproxy.io/docs/envoy/latest/intro/arch_overview/other_features/global_rate_limiting"
+    },
+    {
+      "url": "https://www.envoyproxy.io/docs/envoy/latest/intro/arch_overview/upstream/load_balancing/load_balancers",
+      "status": 200,
+      "resolved": "https://www.envoyproxy.io/docs/envoy/latest/intro/arch_overview/upstream/load_balancing/load_balancers"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/current/",
+      "status": 200,
+      "resolved": "https://www.postgresql.org/docs/current/"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/current/btree.html",
+      "status": 200,
+      "resolved": "https://www.postgresql.org/docs/current/btree.html"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/current/continuous-archiving.html",
+      "status": 200,
+      "resolved": "https://www.postgresql.org/docs/current/continuous-archiving.html"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/current/datatype.html",
+      "status": 200,
+      "resolved": "https://www.postgresql.org/docs/current/datatype.html"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/current/ddl-constraints.html",
+      "status": 200,
+      "resolved": "https://www.postgresql.org/docs/current/ddl-constraints.html"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/current/ddl-rowsecurity.html",
+      "status": 200,
+      "resolved": "https://www.postgresql.org/docs/current/ddl-rowsecurity.html"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/current/explicit-locking.html",
+      "status": 200,
+      "resolved": "https://www.postgresql.org/docs/current/explicit-locking.html"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/current/high-availability.html",
+      "status": 200,
+      "resolved": "https://www.postgresql.org/docs/current/high-availability.html"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/current/indexes-index-only-scans.html",
+      "status": 200,
+      "resolved": "https://www.postgresql.org/docs/current/indexes-index-only-scans.html"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/current/indexes-multicolumn.html",
+      "status": 200,
+      "resolved": "https://www.postgresql.org/docs/current/indexes-multicolumn.html"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/current/mvcc-intro.html",
+      "status": 200,
+      "resolved": "https://www.postgresql.org/docs/current/mvcc-intro.html"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/current/performance-tips.html",
+      "status": 200,
+      "resolved": "https://www.postgresql.org/docs/current/performance-tips.html"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/current/planner-stats.html",
+      "status": 200,
+      "resolved": "https://www.postgresql.org/docs/current/planner-stats.html"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/current/queries-table-expressions.html",
+      "status": 200,
+      "resolved": "https://www.postgresql.org/docs/current/queries-table-expressions.html"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/current/regress.html",
+      "status": 200,
+      "resolved": "https://www.postgresql.org/docs/current/regress.html"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/current/routine-vacuuming.html",
+      "status": 200,
+      "resolved": "https://www.postgresql.org/docs/current/routine-vacuuming.html"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/current/sql-createindex.html",
+      "status": 200,
+      "resolved": "https://www.postgresql.org/docs/current/sql-createindex.html"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/current/storage-file-layout.html",
+      "status": 200,
+      "resolved": "https://www.postgresql.org/docs/current/storage-file-layout.html"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/current/transaction-iso.html",
+      "status": 200,
+      "resolved": "https://www.postgresql.org/docs/current/transaction-iso.html"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/current/two-phase.html",
+      "status": 200,
+      "resolved": "https://www.postgresql.org/docs/current/two-phase.html"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/current/using-explain.html",
+      "status": 200,
+      "resolved": "https://www.postgresql.org/docs/current/using-explain.html"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/current/wal-configuration.html",
+      "status": 200,
+      "resolved": "https://www.postgresql.org/docs/current/wal-configuration.html"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/current/wal-intro.html",
+      "status": 200,
+      "resolved": "https://www.postgresql.org/docs/current/wal-intro.html"
+    },
+    {
+      "url": "https://www.rabbitmq.com/docs/confirms",
+      "status": 200,
+      "resolved": "https://www.rabbitmq.com/docs/confirms"
+    },
+    {
+      "url": "https://www.rabbitmq.com/docs/queues",
+      "status": 200,
+      "resolved": "https://www.rabbitmq.com/docs/queues"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc1034",
+      "status": 200,
+      "resolved": "https://www.rfc-editor.org/info/rfc1034/"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc5861",
+      "status": 200,
+      "resolved": "https://www.rfc-editor.org/info/rfc5861/"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc6455",
+      "status": 200,
+      "resolved": "https://www.rfc-editor.org/info/rfc6455/"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc6585",
+      "status": 200,
+      "resolved": "https://www.rfc-editor.org/info/rfc6585/"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc8200",
+      "status": 200,
+      "resolved": "https://www.rfc-editor.org/info/rfc8200/"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc8259",
+      "status": 200,
+      "resolved": "https://www.rfc-editor.org/info/rfc8259/"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc8446",
+      "status": 200,
+      "resolved": "https://www.rfc-editor.org/info/rfc8446/"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc8725",
+      "status": 200,
+      "resolved": "https://www.rfc-editor.org/info/rfc8725/"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc9000",
+      "status": 200,
+      "resolved": "https://www.rfc-editor.org/info/rfc9000/"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc9110",
+      "status": 200,
+      "resolved": "https://www.rfc-editor.org/info/rfc9110/"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc9111",
+      "status": 200,
+      "resolved": "https://www.rfc-editor.org/info/rfc9111/"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc9113",
+      "status": 200,
+      "resolved": "https://www.rfc-editor.org/info/rfc9113/"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc9114",
+      "status": 200,
+      "resolved": "https://www.rfc-editor.org/info/rfc9114/"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc9162",
+      "status": 200,
+      "resolved": "https://www.rfc-editor.org/info/rfc9162/"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc9293",
+      "status": 200,
+      "resolved": "https://www.rfc-editor.org/info/rfc9293/"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc9457",
+      "status": 200,
+      "resolved": "https://www.rfc-editor.org/info/rfc9457/"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc9700",
+      "status": 200,
+      "resolved": "https://www.rfc-editor.org/info/rfc9700/"
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc9700.html",
+      "status": 200,
+      "resolved": "https://www.rfc-editor.org/rfc/rfc9700.html"
+    },
+    {
+      "url": "https://www.sqlite.org/fileformat.html",
+      "status": 200,
+      "resolved": "https://www.sqlite.org/fileformat.html"
+    },
+    {
+      "url": "https://www.typescriptlang.org/docs/handbook/2/narrowing.html",
+      "status": 200,
+      "resolved": "https://www.typescriptlang.org/docs/handbook/2/narrowing.html"
+    },
+    {
+      "url": "https://www.typescriptlang.org/docs/handbook/2/types-from-types.html",
+      "status": 200,
+      "resolved": "https://www.typescriptlang.org/docs/handbook/2/types-from-types.html"
+    },
+    {
+      "url": "https://www.typescriptlang.org/docs/handbook/intro.html",
+      "status": 200,
+      "resolved": "https://www.typescriptlang.org/docs/handbook/intro.html"
+    },
+    {
+      "url": "https://www.unicode.org/faq/",
+      "status": 200,
+      "resolved": "https://www.unicode.org/faq/"
+    },
+    {
+      "url": "https://www.w3.org/TR/hr-time/",
+      "status": 200,
+      "resolved": "https://www.w3.org/TR/hr-time/"
+    },
+    {
+      "url": "https://www.w3.org/TR/trace-context/",
+      "status": 200,
+      "resolved": "https://www.w3.org/TR/trace-context/"
+    },
+    {
+      "url": "https://www.w3.org/WAI/tutorials/",
+      "status": 200,
+      "resolved": "https://www.w3.org/WAI/tutorials/"
+    },
+    {
+      "url": "https://zustand.docs.pmnd.rs/learn/getting-started/introduction",
+      "status": 200,
+      "resolved": "https://zustand.docs.pmnd.rs/learn/getting-started/introduction"
+    }
+  ]
+}

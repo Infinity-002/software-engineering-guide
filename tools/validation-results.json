@@ -1,0 +1,46 @@
+{
+  "markdown_files": 131,
+  "sections": 22,
+  "chapters": 68,
+  "chapter_words": 67134,
+  "all_markdown_words": 101672,
+  "local_links": 2144,
+  "external_urls": 198,
+  "concept_entries": 677,
+  "critical_concepts_checked": 41,
+  "shortest_chapters": [
+    {
+      "file": "11-system-data-structures/consistent-hashing.md",
+      "words": 722
+    },
+    {
+      "file": "11-system-data-structures/b-plus-trees.md",
+      "words": 722
+    },
+    {
+      "file": "04-frontend/testing.md",
+      "words": 740
+    },
+    {
+      "file": "11-system-data-structures/lsm-trees.md",
+      "words": 772
+    },
+    {
+      "file": "05-backend/testing-and-evolution.md",
+      "words": 786
+    },
+    {
+      "file": "14-observability/slos-and-alerting.md",
+      "words": 787
+    },
+    {
+      "file": "04-frontend/performance.md",
+      "words": 792
+    },
+    {
+      "file": "07-caching/cache-failures.md",
+      "words": 800
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,666 @@
+{
+  "application": "Relay: a team workspace for tasks, comments, attachments, notifications, and activity feeds",
+  "sections": [
+    {
+      "dir": "01-foundations",
+      "title": "Foundations",
+      "level": 0,
+      "prerequisites": [],
+      "chapters": [
+        [
+          "runtime-and-memory",
+          "Processes, memory, and runtime boundaries",
+          "P0",
+          "processes;threads;memory;stack and heap;virtual memory;system calls;file descriptors;sockets;context switching;scheduling"
+        ],
+        [
+          "concurrency-and-io",
+          "Concurrency, synchronization, and I/O",
+          "P0",
+          "concurrency;parallelism;mutexes;semaphores;race conditions;deadlocks;CPU-bound and I/O-bound work;blocking and non-blocking I/O;synchronous and asynchronous execution;event-driven systems;backpressure"
+        ],
+        [
+          "data-and-time",
+          "Bytes, serialization, hashing, and time",
+          "P0",
+          "serialization;encoding;Unicode;hashing;timestamps;wall clocks;monotonic clocks;clock skew"
+        ]
+      ]
+    },
+    {
+      "dir": "02-operating-systems-linux",
+      "title": "Operating systems and Linux",
+      "level": 0,
+      "prerequisites": [
+        "01-foundations"
+      ],
+      "chapters": [
+        [
+          "linux-debugging",
+          "Reading a running Linux system",
+          "P0",
+          "Linux;permissions;signals;process lifecycle;CPU debugging;memory debugging;disk debugging;socket debugging;graceful shutdown"
+        ]
+      ]
+    },
+    {
+      "dir": "03-networking",
+      "title": "Networking",
+      "level": 1,
+      "prerequisites": [
+        "01-foundations"
+      ],
+      "chapters": [
+        [
+          "packets-to-connections",
+          "From packets to reliable connections",
+          "P0",
+          "Internet architecture;packets;Ethernet;IP;IPv4;IPv6;routing;NAT;ports;TCP;UDP;TCP handshake;retransmission;congestion control;flow control;firewalls;NAT traversal"
+        ],
+        [
+          "dns-tls-http",
+          "DNS, TLS, and HTTP",
+          "P0",
+          "DNS;recursive DNS;DNS caching;TLS;certificates;certificate authorities;HTTPS;HTTP/1.1;HTTP/2;HTTP/3;QUIC;keep-alive;connection pooling;HTTP caching"
+        ],
+        [
+          "edges-and-realtime",
+          "Proxies, load balancing, and persistent connections",
+          "P1",
+          "proxies;reverse proxies;load balancers;L4 vs L7;CDNs;WebSockets;SSE;long polling;gRPC networking"
+        ]
+      ]
+    },
+    {
+      "dir": "04-frontend",
+      "title": "Frontend engineering",
+      "level": 1,
+      "prerequisites": [
+        "01-foundations",
+        "03-networking"
+      ],
+      "chapters": [
+        [
+          "html-css-accessibility",
+          "Documents, layout, and accessibility",
+          "P0",
+          "HTML;semantic HTML;forms;CSS;Flexbox;Grid;responsive design;accessibility;browser developer tools"
+        ],
+        [
+          "javascript-runtime",
+          "JavaScript execution and memory",
+          "P0",
+          "execution contexts;lexical scope;closures;hoisting;this;prototypes;prototype chain;classes;modules;promises;async/await;JavaScript event loop;call stack;microtask queue;task queue;timers;errors;garbage collection"
+        ],
+        [
+          "typescript-boundaries",
+          "TypeScript and runtime boundaries",
+          "P0",
+          "structural typing;interfaces;type aliases;unions;intersections;generics;narrowing;utility types;conditional types;mapped types;inference;unknown;never;type safety boundaries"
+        ],
+        [
+          "browser-internals",
+          "How browsers turn documents into pixels",
+          "P0",
+          "browser architecture;DOM;CSSOM;render tree;style calculation;layout;paint;compositing;reflow;repaint;browser rendering;browser processes;cookies;localStorage;sessionStorage;IndexedDB;service workers"
+        ],
+        [
+          "react-mental-model",
+          "React as a state-to-UI system",
+          "P0",
+          "components;props;state;hooks;lifecycle;effects;refs;controlled components;React forms;reconciliation;virtual DOM;keys;render cycles;batching;context;error boundaries;Suspense;memoization;useEffect misuse"
+        ],
+        [
+          "state-and-data-fetching",
+          "State ownership and server-state caches",
+          "P1",
+          "local UI state;global client state;server state;URL state;form state;Context;Redux;Zustand;TanStack Query;invalidation;optimistic updates"
+        ],
+        [
+          "rendering-architectures",
+          "CSR, SSR, hydration, and Server Components",
+          "P1",
+          "CSR;SSR;SSG;ISR;hydration;partial hydration;streaming rendering;React Server Components;Next.js architecture"
+        ],
+        [
+          "performance",
+          "Measuring and improving frontend performance",
+          "P1",
+          "Core Web Vitals;network waterfalls;bundle size;tree shaking;code splitting;lazy loading;preloading;prefetching;image optimization;rendering bottlenecks;performance profiling"
+        ],
+        [
+          "testing",
+          "Testing frontend behavior",
+          "P1",
+          "frontend unit tests;component tests;frontend integration tests;E2E tests;mocking;behavior testing"
+        ]
+      ]
+    },
+    {
+      "dir": "05-backend",
+      "title": "Backend and API engineering",
+      "level": 1,
+      "prerequisites": [
+        "01-foundations",
+        "03-networking"
+      ],
+      "chapters": [
+        [
+          "server-architecture",
+          "Request lifecycle and backend boundaries",
+          "P0",
+          "server architecture;request lifecycle;routing;controllers;services;repositories;middleware;dependency injection;validation;serialization;configuration;environment variables;structured errors;connection pools"
+        ],
+        [
+          "api-design",
+          "Designing durable APIs",
+          "P0",
+          "REST;resources;HTTP methods;status codes;headers;content negotiation;safe methods;idempotency;pagination;cursor pagination;offset pagination;filtering;sorting;API versioning;API keys;webhooks;GraphQL;gRPC;RPC;OpenAPI;API compatibility"
+        ],
+        [
+          "testing-and-evolution",
+          "Testing services and changing contracts",
+          "P1",
+          "backend tests;contract testing;integration testing;schema evolution;dependency boundaries;property testing;load testing"
+        ]
+      ]
+    },
+    {
+      "dir": "06-databases",
+      "title": "Databases",
+      "level": 2,
+      "prerequisites": [
+        "01-foundations",
+        "05-backend"
+      ],
+      "chapters": [
+        [
+          "relational-model",
+          "Relational modeling and SQL",
+          "P0",
+          "tables;rows;columns;primary keys;foreign keys;constraints;normalization;denormalization;joins;SQL"
+        ],
+        [
+          "indexes-and-query-plans",
+          "Indexes and query execution",
+          "P0",
+          "indexes;index lookup;range scans;composite indexes;prefix rules;covering indexes;selectivity;cardinality;clustered indexes;write amplification;query parsing;query planner;execution plans;sequential scans;index scans;join algorithms;statistics;EXPLAIN"
+        ],
+        [
+          "transactions-and-mvcc",
+          "Transactions, isolation, and MVCC",
+          "P0",
+          "ACID;atomicity;consistency;isolation;durability;transactions;locks;MVCC;dirty reads;non-repeatable reads;phantom reads;lost updates;isolation levels;database deadlocks;optimistic concurrency;pessimistic concurrency"
+        ],
+        [
+          "storage-and-recovery",
+          "Pages, WAL, and crash recovery",
+          "P1",
+          "pages;WAL;buffer pool;checkpoints;crash recovery;storage layout;vacuum;backup restoration"
+        ],
+        [
+          "scaling-and-nosql",
+          "Replication, partitioning, and data models",
+          "P1",
+          "read replicas;synchronous replication;asynchronous replication;replication lag;partitioning;sharding;resharding;hot partitions;distributed databases;key-value databases;document databases;wide-column databases;graph databases;search engines"
+        ]
+      ]
+    },
+    {
+      "dir": "07-caching",
+      "title": "Caching",
+      "level": 2,
+      "prerequisites": [
+        "03-networking",
+        "06-databases"
+      ],
+      "chapters": [
+        [
+          "cache-design",
+          "Designing caches and freshness contracts",
+          "P0",
+          "locality;browser caching;CDN caching;application caching;database caching;Redis;cache-aside;read-through;write-through;write-behind;TTL;eviction;LRU;LFU;cache invalidation;stale data;distributed caches;cache consistency"
+        ],
+        [
+          "cache-failures",
+          "Stampedes, hot keys, and cache outages",
+          "P1",
+          "cache stampede;cache penetration;cache avalanche;hot keys;negative caching;request coalescing"
+        ]
+      ]
+    },
+    {
+      "dir": "08-security",
+      "title": "Security and trust boundaries",
+      "level": 1,
+      "prerequisites": [
+        "03-networking",
+        "05-backend"
+      ],
+      "chapters": [
+        [
+          "trust-and-authorization",
+          "Trust boundaries and authorization",
+          "P0",
+          "trust boundaries;authentication vs authorization;RBAC;ABAC;permissions;least privilege;secrets;API key security;secret management;password hashing;salts"
+        ],
+        [
+          "sessions-jwt-oauth",
+          "Sessions, JWT verification, OAuth, and OIDC",
+          "P0",
+          "sessions;JWT;JWT verification;signing vs encryption;claims;token expiration;refresh tokens;OAuth 2.0;OpenID Connect;authorization code flow;PKCE"
+        ],
+        [
+          "browser-and-input-security",
+          "Browser security and hostile input",
+          "P0",
+          "CSRF;CORS;XSS;SQL injection;command injection;SSRF;CSP;clickjacking;secure headers;frontend trust;backend trust"
+        ]
+      ]
+    },
+    {
+      "dir": "09-messaging-streaming",
+      "title": "Messaging and streaming",
+      "level": 3,
+      "prerequisites": [
+        "05-backend",
+        "06-databases"
+      ],
+      "chapters": [
+        [
+          "queues-and-workers",
+          "Queues, workers, and delivery semantics",
+          "P1",
+          "synchronous vs asynchronous communication;queues;pub/sub;brokers;producers;consumers;acknowledgements;retries;DLQs;poison messages;ordering;at-most-once;at-least-once;exactly once;RabbitMQ"
+        ],
+        [
+          "kafka-and-event-streams",
+          "Kafka and partitioned event streams",
+          "P1",
+          "event streams;Kafka;topics;partitions;offsets;brokers;consumer groups;retention;stream replication;rebalancing;event schema evolution"
+        ]
+      ]
+    },
+    {
+      "dir": "10-distributed-systems",
+      "title": "Distributed systems",
+      "level": 4,
+      "prerequisites": [
+        "03-networking",
+        "06-databases",
+        "09-messaging-streaming"
+      ],
+      "chapters": [
+        [
+          "partial-failure-and-consistency",
+          "Partial failure, CAP, and consistency",
+          "P1",
+          "network failures;process failures;partial failure;latency;timeouts;duplicate requests;message reordering;network partitions;CAP;strong consistency;eventual consistency;read-your-writes;monotonic reads;causal consistency;linearizability"
+        ],
+        [
+          "replication-and-quorums",
+          "Replication, quorums, and failover",
+          "P2",
+          "leader/follower;multi-leader;leaderless replication;failover;N W R quorums;stale reads;split brain"
+        ],
+        [
+          "leases-and-fencing",
+          "Leases, distributed locks, and fencing tokens",
+          "P2",
+          "leases;lease holder;lease authority;lease TTL;lease acquisition;lease renewal;lease expiration;stale holders;fencing tokens;distributed locks;lock ownership;lease clock assumptions"
+        ],
+        [
+          "logical-time",
+          "Logical time and causality",
+          "P2",
+          "clock problems;Lamport clocks;vector clocks;happens-before;hybrid logical clocks"
+        ],
+        [
+          "consensus-and-leadership",
+          "Consensus and leader election",
+          "P2",
+          "consensus;majority;terms;epochs;replicated logs;leader election;Raft;Paxos;failure detection"
+        ]
+      ]
+    },
+    {
+      "dir": "11-system-data-structures",
+      "title": "Data structures inside systems",
+      "level": 3,
+      "prerequisites": [
+        "01-foundations",
+        "06-databases"
+      ],
+      "chapters": [
+        [
+          "bloom-filters",
+          "Bloom filters and negative knowledge",
+          "P1",
+          "Bloom filters;bit arrays;hash functions;false positives;false negatives;Bloom sizing;counting Bloom filters"
+        ],
+        [
+          "consistent-hashing",
+          "Consistent hashing and placement",
+          "P2",
+          "consistent hashing;modulo hashing;hash ring;virtual nodes;placement;replica placement"
+        ],
+        [
+          "b-plus-trees",
+          "B-trees and B+ trees",
+          "P1",
+          "B-trees;B+ trees;fanout;page splits;linked leaves;balanced storage trees"
+        ],
+        [
+          "lsm-trees",
+          "LSM trees and compaction",
+          "P2",
+          "LSM trees;memtable;SSTables;compaction;read amplification;space amplification;tombstones"
+        ],
+        [
+          "skip-lists",
+          "Skip lists: ordered data without tree rotations",
+          "P2",
+          "skip lists;probabilistic levels;concurrent ordered structures"
+        ],
+        [
+          "merkle-trees",
+          "Merkle trees and efficient replica comparison",
+          "P2",
+          "Merkle trees;hash trees;anti-entropy;replica comparison;Merkle proofs"
+        ],
+        [
+          "hyperloglog",
+          "HyperLogLog and approximate cardinality",
+          "P2",
+          "HyperLogLog;approximate cardinality;mergeable sketches"
+        ],
+        [
+          "inverted-indexes",
+          "Inverted indexes and search mechanics",
+          "P2",
+          "inverted indexes;posting lists;tokenization;search ranking"
+        ]
+      ]
+    },
+    {
+      "dir": "12-fullstack",
+      "title": "End-to-end application engineering",
+      "level": 2,
+      "prerequisites": [
+        "04-frontend",
+        "05-backend",
+        "06-databases",
+        "08-security"
+      ],
+      "chapters": [
+        [
+          "the-life-of-a-request",
+          "The life of a request",
+          "P0",
+          "user click to pixels;React fetch flow;middleware flow;database response;frontend cache;request journey"
+        ],
+        [
+          "authentication-and-data-flows",
+          "Authentication and data flows",
+          "P0",
+          "login flow;Set-Cookie;cookie jar;credentials;preflight requests;refresh flows;logout;session expiration;data fetching flow"
+        ],
+        [
+          "realtime-and-uploads",
+          "Real-time features and file uploads",
+          "P1",
+          "polling;reconnects;presence;multipart uploads;streaming uploads;object storage;presigned URLs;upload limits;upload security"
+        ]
+      ]
+    },
+    {
+      "dir": "13-reliability",
+      "title": "Reliability engineering",
+      "level": 5,
+      "prerequisites": [
+        "05-backend",
+        "09-messaging-streaming",
+        "10-distributed-systems"
+      ],
+      "chapters": [
+        [
+          "resilience-and-recovery",
+          "Bounding failure and recovering service",
+          "P1",
+          "timeouts;retry storms;exponential backoff;jitter;circuit breakers;bulkheads;load shedding;graceful degradation;health checks;readiness vs liveness;redundancy;disaster recovery;backups;RPO;RTO"
+        ],
+        [
+          "rate-limiting",
+          "Rate limiting, fairness, and admission control",
+          "P1",
+          "fixed window;sliding window log;sliding window counter;token bucket;leaky bucket;distributed rate limiting;Redis rate limiting;fairness;burst handling"
+        ]
+      ]
+    },
+    {
+      "dir": "14-observability",
+      "title": "Observability and production diagnosis",
+      "level": 3,
+      "prerequisites": [
+        "05-backend",
+        "09-messaging-streaming"
+      ],
+      "chapters": [
+        [
+          "logs-metrics-traces",
+          "Logs, metrics, traces, and request diagnosis",
+          "P1",
+          "structured logging;log levels;correlation IDs;distributed tracing;spans;trace context;OpenTelemetry;counters;gauges;histograms;percentiles;RED;USE;dashboards;slow request debugging"
+        ],
+        [
+          "slos-and-alerting",
+          "SLIs, SLOs, and useful alerts",
+          "P1",
+          "SLI;SLO;SLA;error budgets;alerting;burn rate;incident handling;postmortems"
+        ]
+      ]
+    },
+    {
+      "dir": "15-containers",
+      "title": "Containers",
+      "level": 2,
+      "prerequisites": [
+        "02-operating-systems-linux",
+        "05-backend"
+      ],
+      "chapters": [
+        [
+          "containers-and-docker",
+          "Containers, images, and local environments",
+          "P1",
+          "containers;namespaces;cgroups;images;layers;Dockerfiles;registries;volumes;container networking;Docker Compose"
+        ]
+      ]
+    },
+    {
+      "dir": "16-cloud",
+      "title": "Cloud architecture",
+      "level": 5,
+      "prerequisites": [
+        "03-networking",
+        "06-databases",
+        "13-reliability",
+        "15-containers"
+      ],
+      "chapters": [
+        [
+          "cloud-primitives",
+          "Cloud primitives and failure domains",
+          "P1",
+          "compute;virtual machines;serverless;block storage;managed databases;VPCs;subnets;security groups;IAM;autoscaling;regions;availability zones;cloud DNS;managed queues;managed caches;AWS mapping;cloud cost"
+        ]
+      ]
+    },
+    {
+      "dir": "17-kubernetes",
+      "title": "Kubernetes",
+      "level": 5,
+      "prerequisites": [
+        "15-containers",
+        "16-cloud"
+      ],
+      "chapters": [
+        [
+          "kubernetes-model",
+          "Kubernetes as a reconciliation system",
+          "P2",
+          "cluster;control plane;worker node;pod;deployment;ReplicaSet;service;ingress;ConfigMap;secret;volume;scheduling;health probes;rolling updates;autoscaling;service discovery;resource requests and limits;failure recovery"
+        ]
+      ]
+    },
+    {
+      "dir": "18-ci-cd",
+      "title": "Delivery and change safety",
+      "level": 5,
+      "prerequisites": [
+        "05-backend",
+        "06-databases",
+        "15-containers"
+      ],
+      "chapters": [
+        [
+          "safe-delivery",
+          "CI/CD, migrations, and safe releases",
+          "P1",
+          "source control workflow;build;lint;test;artifacts;container build;deployment;migrations;rollback;feature flags;blue-green deployment;canary deployment;rolling deployment;supply chain"
+        ]
+      ]
+    },
+    {
+      "dir": "19-system-design",
+      "title": "System design",
+      "level": 6,
+      "prerequisites": [
+        "07-caching",
+        "09-messaging-streaming",
+        "10-distributed-systems",
+        "13-reliability",
+        "14-observability",
+        "16-cloud"
+      ],
+      "chapters": [
+        [
+          "methodology",
+          "A repeatable system design method",
+          "P0",
+          "requirements;capacity estimation;API design reasoning;data model reasoning;bottlenecks;security design;observability design;trade-off analysis"
+        ],
+        [
+          "beginner-designs",
+          "Four foundational designs",
+          "P0",
+          "URL shortener;Pastebin;rate limiter design;file upload service"
+        ],
+        [
+          "intermediate-designs",
+          "Six production designs",
+          "P1",
+          "notification service;chat system;search autocomplete;job queue;analytics pipeline;image hosting"
+        ],
+        [
+          "advanced-designs",
+          "Eight advanced system designs",
+          "P2",
+          "Twitter-style feed;YouTube-style video;Drive-style storage;Uber-style dispatch;collaborative editor;payment system;distributed task scheduler;large-scale search"
+        ]
+      ]
+    },
+    {
+      "dir": "20-production-patterns",
+      "title": "Production patterns",
+      "level": 3,
+      "prerequisites": [
+        "05-backend",
+        "06-databases",
+        "09-messaging-streaming"
+      ],
+      "chapters": [
+        [
+          "idempotency-and-deduplication",
+          "Idempotency keys and deduplication",
+          "P1",
+          "idempotency keys;request fingerprints;deduplication;response replay;retry-safe effects"
+        ],
+        [
+          "outbox-inbox-and-sagas",
+          "Outbox, inbox, sagas, and distributed transactions",
+          "P1",
+          "transactional outbox;inbox pattern;saga;distributed transactions;two-phase commit;compensation"
+        ],
+        [
+          "cqrs-and-event-sourcing",
+          "CQRS and event sourcing",
+          "P2",
+          "CQRS;event sourcing;projection rebuilding;event evolution"
+        ],
+        [
+          "boundaries-and-routing",
+          "Gateways, BFFs, and service discovery",
+          "P1",
+          "API gateway;backend-for-frontend;service discovery;microservice boundaries;modular monolith"
+        ],
+        [
+          "data-lifecycle-and-tenancy",
+          "Tenancy, audit, deletion, and concurrency",
+          "P1",
+          "multi-tenancy;soft deletion;audit logs;optimistic locking;pessimistic locking;feature flag lifecycle"
+        ]
+      ]
+    },
+    {
+      "dir": "21-case-studies",
+      "title": "Case studies",
+      "level": 6,
+      "prerequisites": [
+        "12-fullstack",
+        "19-system-design",
+        "20-production-patterns"
+      ],
+      "chapters": [
+        [
+          "relay-evolution",
+          "Relay: one service to a scalable application",
+          "P1",
+          "running full-stack application;architecture evolution;monolith to services;scaling decisions"
+        ],
+        [
+          "incident-lab",
+          "Three incidents, evidence, and recovery",
+          "P1",
+          "cache outage investigation;pool exhaustion investigation;duplicate payment investigation;incident timelines"
+        ]
+      ]
+    },
+    {
+      "dir": "22-interview-preparation",
+      "title": "Interview preparation",
+      "level": 6,
+      "prerequisites": [
+        "04-frontend",
+        "05-backend",
+        "06-databases",
+        "08-security",
+        "19-system-design"
+      ],
+      "chapters": [
+        [
+          "reasoning-interviews",
+          "Reasoning questions and evaluation rubrics",
+          "P1",
+          "frontend interviews;JavaScript interviews;React interviews;backend interviews;database interviews;networking interviews;security interviews;distributed systems interviews;cloud interviews;production debugging interviews"
+        ],
+        [
+          "mock-interviews",
+          "Four complete mock interview sessions",
+          "P1",
+          "frontend mock;backend mock;full-stack mock;system design mock;interview feedback"
+        ]
+      ]
+    }
+  ]
+}
